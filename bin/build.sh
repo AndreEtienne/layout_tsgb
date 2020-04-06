@@ -6,7 +6,7 @@ rm -rf Resources/Public/Bundle/*.*
 # -d: specified destination folder
 # --no-source-maps --no-cache: do not use the parcel cache, do not generate source maps, static files contains content based hashes
 # --public-url: set the relative url in js and css files to a specific url
-parcel build Resources/Private/HTML/*.html -d Resources/Public/Bundle/ --public-url Resources/Public/Bundle/ --no-cache --no-source-maps --no-minify
+parcel build Resources/Private/HTML/*.pug -d Resources/Public/Bundle/ --public-url Resources/Public/Bundle/ --no-cache --no-source-maps --no-minify
 
 # Step 3: execute a node script afterwards that removes the hashes in filenames from folder (arg[0]) and filenames (arg[1])
 node bin/remove-file-hashes.js Resources/Public/Bundle/ js,css,ico

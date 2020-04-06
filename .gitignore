@@ -213,3 +213,4 @@ dist
 *.iml
 out
 gen
+/Resources/Public/Bundle/*

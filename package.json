@@ -5,9 +5,11 @@
   "main": "Resources/Private/Javascript/index.js",
   "dependencies": {
     "@popperjs/core": "^2.1.1",
+    "autoprefixer": "^9.7.5",
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.16.1",
+    "postcss-modules": "^1.5.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1"
   },
