@@ -1,0 +1,86 @@
+html,
+body {
+  background-color: $main-dark-blue;
+  color: $main-white;
+  font-family: $font-family-open-sans;
+  font-weight: $font-weight-base;
+}
+
+
+h1,
+h2,
+h3, {
+  font-family: $font-family-pt-sans;
+  font-size: rem-calc(50);
+  font-weight: 400;
+}
+
+.main-page {
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1800px;
+    }
+  }
+}
+
+.header {
+  &__logo {
+    padding: 15px;
+  }
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-section-headline {
+  font-family: $font-family-pt-sans;
+  margin-top: rem-calc(80);
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+
+  &__title {
+    font-size: rem-calc(124);
+    line-height: 1.2
+  }
+
+  &__subtitle {
+    font-size: rem-calc(83);
+  }
+}
+
+
+.edge-border {
+  height: 200px;
+  margin-top: -200px;
+  overflow: visible;
+  position: relative;
+  width: 100%;
+
+  &__outer {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__inner {
+    background-color: $main-dark-blue;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(5deg);
+    transform-origin: left bottom;
+    width: 110%;
+    z-index: 1;
+  }
+
+  h1 {
+    margin-left: 15px;
+    margin-top: 90px;
+    position: absolute;
+    z-index: 2;
+  }
+}

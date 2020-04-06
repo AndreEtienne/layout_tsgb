@@ -1,0 +1,11 @@
+.slider {
+  .slick-slide {
+    max-height: 100vh;
+    min-height: 200px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
